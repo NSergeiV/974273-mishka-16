@@ -14,24 +14,26 @@
 .user-list__search,
 .user-list__basket {
   position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: -45px;
+    top: 2px;
+  }
 }
 
-.user-list__search::before,
-.user-list__basket::before {
-  content: "";
-  display: block;
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  left: -45px;
-  top: 2px;
+.user-list__search {
+  &::before {
+    background: url("../img/icon-search.svg") no-repeat;
+  }
 }
 
-.user-list__search::before {
-  content: "";
-  background: url("../img/icon-search.svg") no-repeat;
-}
-
-.user-list__basket::before {
-  background: url("../img/icon-cart.svg") no-repeat;
+.user-list__basket {
+  &::before {
+    background: url("../img/icon-cart.svg") no-repeat;
+  }
 }
