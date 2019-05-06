@@ -1,10 +1,13 @@
 .page-header {
+  position: relative;
   width: 320px;
   height: auto;
   margin: 0 auto;
   padding: 0;
   border: 1px solid;
   box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .page-header__logo-wrapper {
@@ -21,4 +24,53 @@
 
 .page-header__logo-image {
   margin: auto;
+}
+
+.page-header__delivery {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .page-header {
+    width: 768px;
+    height: 88px;
+    padding: 0 40px;
+    border-bottom: 1px solid #dfdfdf;
+    flex-wrap: nowrap;
+  }
+
+  .page-header__logo-wrapper {
+    border-bottom: none;
+    height: 86px;
+  }
+
+  .page-header__logo {
+    margin: auto 0;
+  }
+
+  .page-header__delivery {
+    display: block;
+    position: absolute;
+    right: 50px;
+    top: 95px;
+    font-size: 15px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .page-header {
+    width: 1150px;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .page-header__logo-wrapper {
+    margin: 0;
+    width: 250px;
+  }
+
+  .page-header__logo {
+    margin: auto;
+  }
 }

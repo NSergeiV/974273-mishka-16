@@ -6,6 +6,7 @@
   box-sizing: border-box;
   text-align: left;
   border: 1px solid;
+  position: relative;
 }
 
 .your-comments__title {
@@ -52,4 +53,19 @@
   text-align: center;
   padding: 15px 0;
   box-sizing: border-box;
+}
+
+@media (min-width: 768px) {
+  .your-comments {
+    width: 100%;
+  }
+
+  .button-comments {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 175px;
+    height: 52px;
+    font-size: 17px;
+  }
 }

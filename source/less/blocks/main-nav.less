@@ -12,7 +12,7 @@
     text-align: left;
     padding-left: 75px;
     height: 79px;
-    padding-top: 30px;
+    display: flex;
     box-sizing: border-box;
   }
 }
@@ -22,4 +22,31 @@
   right: 30px;
   top: -50px;
   cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav {
+    display: flex;
+    flex-wrap: wrap;
+    width: 348px;
+    position: relative;
+    border-right: 1px solid;
+  }
+
+  .main-nav__list {
+    li {
+      text-align: left;
+      border-bottom: none;
+    }
+  }
+}
+
+@media (min-width: 1150px) {
+  .main-nav {
+    margin: 0;
+  }
 }

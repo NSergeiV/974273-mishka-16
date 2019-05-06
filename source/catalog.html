@@ -22,16 +22,25 @@
           <li class="site-list__item">
             <a href="form.html">Вязание на заказ</a>
           </li>
+          <div class="site-list__item-wrapper">
+            <li class="site-list__item">
+              <a href="catalog.html">Новые поступления</a>
+            </li>
+            <li class="site-list__item">
+              <a href="form.html">Распродажа</a>
+            </li>
+          </div>
         </ul>
         <ul class="main-nav__list user-list">
           <li class="user-list__item">
-            <a class="user-list__search" href="#">Поиск по сайту</a>
+            <a class="user-list__search" href="#"><span>Поиск по сайту</span></a>
           </li>
           <li class="user-list__item">
             <a class="user-list__basket" href="#">Корзина: пока пуста</a>
           </li>
         </ul>
       </nav>
+      <p class="page-header__delivery">Бесплатная доставка по России</p>
     </header>
     <main class="page-main-catalog">
       <section class="product-catalog">
@@ -41,47 +50,65 @@
         <ul class="product-catalog__list">
           <li class="product-catalog__item product">
             <a class="product__img" href="#">
-              <img src="img/photo-hare-mobile@1x.jpg" width="260" height="195" alt="" title="">
+              <img class="photo-mobile" src="img/photo-hare-mobile@1x.jpg" width="260" height="195" alt="" title="">
+              <img class="photo-tablet" src="img/photo-hare-tablet@1x.jpg" width="260" height="195" alt="" title="">
+              <img class="photo-desktop" src="img/photo-hare-desktop@1x.jpg" width="260" height="195" alt="" title="">
             </a>
-            <a class="product__link">Зайчик-попрыгайчик</a>
-            <p class="product__size">Рост 30 см, вес 200 г</p>
-            <div class="product__price-basket">
-              <p class="product__price">1 200 руб.</p>
-              <a class="product__basket" href="#" aria-label="Корзина с товаром">
-                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20.294px" height="18.849px" viewBox="264.205 370.961 20.294 18.849" enable-background="new 264.205 370.961 20.294 18.849" xml:space="preserve">
-                  <path fill="#231F20" d="M283.75,378.19h-3.151l-3.407-6.814c-0.185-0.37-0.634-0.52-1.006-0.335 c-0.371,0.186-0.521,0.636-0.335,1.006l3.071,6.143h-9.138l3.072-6.143c0.185-0.371,0.035-0.821-0.335-1.006 c-0.37-0.185-0.821-0.035-1.006,0.335l-3.407,6.814h-3.151c-0.414,0-0.75,0.336-0.75,0.75s0.336,0.75,0.75,0.75h0.157l0.855,2.991 c-0.187,0.137-0.316,0.347-0.316,0.595c0,0.396,0.309,0.71,0.697,0.739l1.656,5.795h12.697l1.656-5.795 c0.388-0.028,0.698-0.344,0.698-0.739c0-0.249-0.129-0.459-0.316-0.596l0.854-2.991h0.157c0.414,0,0.75-0.336,0.75-0.75 S284.164,378.19,283.75,378.19z M279.569,388.311h-10.433l-1.224-4.284h12.881L279.569,388.311z M281.222,382.526h-13.739 l-0.81-2.836h15.359L281.222,382.526z"/>
-                </svg>
-              </a>
+            <div class="product__content-wraper">
+              <div class="product__characteristics-wraper">
+                <a class="product__link">Зайчик-попрыгайчик</a>
+                <p class="product__size">Рост 30 см, вес 200 г</p>
+              </div>
+              <div class="product__price-basket">
+                <p class="product__price">1 200 руб.</p>
+                <a class="product__basket" href="#" aria-label="Корзина с товаром">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20.294px" height="18.849px" viewBox="264.205 370.961 20.294 18.849" enable-background="new 264.205 370.961 20.294 18.849" xml:space="preserve">
+                    <path fill="#231F20" d="M283.75,378.19h-3.151l-3.407-6.814c-0.185-0.37-0.634-0.52-1.006-0.335 c-0.371,0.186-0.521,0.636-0.335,1.006l3.071,6.143h-9.138l3.072-6.143c0.185-0.371,0.035-0.821-0.335-1.006 c-0.37-0.185-0.821-0.035-1.006,0.335l-3.407,6.814h-3.151c-0.414,0-0.75,0.336-0.75,0.75s0.336,0.75,0.75,0.75h0.157l0.855,2.991 c-0.187,0.137-0.316,0.347-0.316,0.595c0,0.396,0.309,0.71,0.697,0.739l1.656,5.795h12.697l1.656-5.795 c0.388-0.028,0.698-0.344,0.698-0.739c0-0.249-0.129-0.459-0.316-0.596l0.854-2.991h0.157c0.414,0,0.75-0.336,0.75-0.75 S284.164,378.19,283.75,378.19z M279.569,388.311h-10.433l-1.224-4.284h12.881L279.569,388.311z M281.222,382.526h-13.739 l-0.81-2.836h15.359L281.222,382.526z"/>
+                  </svg>
+                </a>
+              </div>
             </div>
           </li>
           <li class="product-catalog__item product">
             <a class="product__img" href="#">
-              <img src="img/photo-bowl-mobile@1x.jpg" width="260" height="195" alt="" title="">
+              <img class="photo-mobile" src="img/photo-bowl-mobile@1x.jpg" width="260" height="195" alt="" title="">
+              <img class="photo-tablet" src="img/photo-bowl-tablet@1x.jpg" width="260" height="195" alt="" title="">
+              <img class="photo-desktop" src="img/photo-bowl-desktop@1x.jpg" width="260" height="195" alt="" title="">
             </a>
-            <a class="product__link">Корзинка для белья</a>
-            <p class="product__size">Диаметр 15 см, высота 10 см</p>
-            <div class="product__price-basket">
-              <p class="product__price">690 руб.</p>
-              <a class="product__basket" href="#" aria-label="Корзина с товаром">
-                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20.294px" height="18.849px" viewBox="264.205 370.961 20.294 18.849" enable-background="new 264.205 370.961 20.294 18.849" xml:space="preserve">
-                  <path fill="#231F20" d="M283.75,378.19h-3.151l-3.407-6.814c-0.185-0.37-0.634-0.52-1.006-0.335 c-0.371,0.186-0.521,0.636-0.335,1.006l3.071,6.143h-9.138l3.072-6.143c0.185-0.371,0.035-0.821-0.335-1.006 c-0.37-0.185-0.821-0.035-1.006,0.335l-3.407,6.814h-3.151c-0.414,0-0.75,0.336-0.75,0.75s0.336,0.75,0.75,0.75h0.157l0.855,2.991 c-0.187,0.137-0.316,0.347-0.316,0.595c0,0.396,0.309,0.71,0.697,0.739l1.656,5.795h12.697l1.656-5.795 c0.388-0.028,0.698-0.344,0.698-0.739c0-0.249-0.129-0.459-0.316-0.596l0.854-2.991h0.157c0.414,0,0.75-0.336,0.75-0.75 S284.164,378.19,283.75,378.19z M279.569,388.311h-10.433l-1.224-4.284h12.881L279.569,388.311z M281.222,382.526h-13.739 l-0.81-2.836h15.359L281.222,382.526z"/>
-                </svg>
-              </a>
+            <div class="product__content-wraper">
+              <div class="product__characteristics-wraper">
+                <a class="product__link">Корзинка для белья</a>
+                <p class="product__size">Диаметр 15 см, высота 10 см</p>
+              </div>
+              <div class="product__price-basket">
+                <p class="product__price">690 руб.</p>
+                <a class="product__basket" href="#" aria-label="Корзина с товаром">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20.294px" height="18.849px" viewBox="264.205 370.961 20.294 18.849" enable-background="new 264.205 370.961 20.294 18.849" xml:space="preserve">
+                    <path fill="#231F20" d="M283.75,378.19h-3.151l-3.407-6.814c-0.185-0.37-0.634-0.52-1.006-0.335 c-0.371,0.186-0.521,0.636-0.335,1.006l3.071,6.143h-9.138l3.072-6.143c0.185-0.371,0.035-0.821-0.335-1.006 c-0.37-0.185-0.821-0.035-1.006,0.335l-3.407,6.814h-3.151c-0.414,0-0.75,0.336-0.75,0.75s0.336,0.75,0.75,0.75h0.157l0.855,2.991 c-0.187,0.137-0.316,0.347-0.316,0.595c0,0.396,0.309,0.71,0.697,0.739l1.656,5.795h12.697l1.656-5.795 c0.388-0.028,0.698-0.344,0.698-0.739c0-0.249-0.129-0.459-0.316-0.596l0.854-2.991h0.157c0.414,0,0.75-0.336,0.75-0.75 S284.164,378.19,283.75,378.19z M279.569,388.311h-10.433l-1.224-4.284h12.881L279.569,388.311z M281.222,382.526h-13.739 l-0.81-2.836h15.359L281.222,382.526z"/>
+                  </svg>
+                </a>
+              </div>
             </div>
           </li>
           <li class="product-catalog__item product">
             <a class="product__img" href="#">
-              <img src="img/photo-toys-mobile@1x.jpg" width="260" height="195" alt="" title="">
+              <img class="photo-mobile" src="img/photo-toys-mobile@1x.jpg" width="260" height="195" alt="" title="">
+              <img class="photo-tablet" src="img/photo-toys-tablet@1x.jpg" width="260" height="195" alt="" title="">
+              <img class="photo-desktop" src="img/photo-toys-desktop@1x.jpg" width="260" height="195" alt="" title="">
             </a>
-            <a class="product__link">Большая корзинка для игрушек</a>
-            <p class="product__size">Диаметр 30 см, высота 30 см</p>
-            <div class="product__price-basket">
-              <p class="product__price">1 500 руб.</p>
-              <a class="product__basket" href="#" aria-label="Корзина с товаром">
-                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20.294px" height="18.849px" viewBox="264.205 370.961 20.294 18.849" enable-background="new 264.205 370.961 20.294 18.849" xml:space="preserve">
-                  <path fill="#231F20" d="M283.75,378.19h-3.151l-3.407-6.814c-0.185-0.37-0.634-0.52-1.006-0.335 c-0.371,0.186-0.521,0.636-0.335,1.006l3.071,6.143h-9.138l3.072-6.143c0.185-0.371,0.035-0.821-0.335-1.006 c-0.37-0.185-0.821-0.035-1.006,0.335l-3.407,6.814h-3.151c-0.414,0-0.75,0.336-0.75,0.75s0.336,0.75,0.75,0.75h0.157l0.855,2.991 c-0.187,0.137-0.316,0.347-0.316,0.595c0,0.396,0.309,0.71,0.697,0.739l1.656,5.795h12.697l1.656-5.795 c0.388-0.028,0.698-0.344,0.698-0.739c0-0.249-0.129-0.459-0.316-0.596l0.854-2.991h0.157c0.414,0,0.75-0.336,0.75-0.75 S284.164,378.19,283.75,378.19z M279.569,388.311h-10.433l-1.224-4.284h12.881L279.569,388.311z M281.222,382.526h-13.739 l-0.81-2.836h15.359L281.222,382.526z"/>
-                </svg>
-              </a>
+            <div class="product__content-wraper">
+              <div class="product__characteristics-wraper">
+                <a class="product__link">Большая корзинка для игрушек</a>
+                <p class="product__size">Диаметр 30 см, высота 30 см</p>
+              </div>
+              <div class="product__price-basket">
+                <p class="product__price">1 500 руб.</p>
+                <a class="product__basket" href="#" aria-label="Корзина с товаром">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20.294px" height="18.849px" viewBox="264.205 370.961 20.294 18.849" enable-background="new 264.205 370.961 20.294 18.849" xml:space="preserve">
+                    <path fill="#231F20" d="M283.75,378.19h-3.151l-3.407-6.814c-0.185-0.37-0.634-0.52-1.006-0.335 c-0.371,0.186-0.521,0.636-0.335,1.006l3.071,6.143h-9.138l3.072-6.143c0.185-0.371,0.035-0.821-0.335-1.006 c-0.37-0.185-0.821-0.035-1.006,0.335l-3.407,6.814h-3.151c-0.414,0-0.75,0.336-0.75,0.75s0.336,0.75,0.75,0.75h0.157l0.855,2.991 c-0.187,0.137-0.316,0.347-0.316,0.595c0,0.396,0.309,0.71,0.697,0.739l1.656,5.795h12.697l1.656-5.795 c0.388-0.028,0.698-0.344,0.698-0.739c0-0.249-0.129-0.459-0.316-0.596l0.854-2.991h0.157c0.414,0,0.75-0.336,0.75-0.75 S284.164,378.19,283.75,378.19z M279.569,388.311h-10.433l-1.224-4.284h12.881L279.569,388.311z M281.222,382.526h-13.739 l-0.81-2.836h15.359L281.222,382.526z"/>
+                  </svg>
+                </a>
+              </div>
             </div>
           </li>
         </ul>
@@ -89,12 +116,17 @@
       <section class="production-process">
         <h2 class="visually-hidden">Блок с видеозаписью процесса производства</h2>
         <h2 class="production-process__title">Процесс производства</h2>
-        <img src="img/video-mobile@1x.jpg" width="260" height="150" alt="" title="" >
+        <img class="video-mobile" src="img/video-mobile@1x.jpg" width="260" height="150" alt="" title="" >
+        <img class="video-tablet" src="img/video-tablet@1x.jpg" width="260" height="150" alt="" title="" >
+        <img class="video-desktop" src="img/video-desktop@1x.jpg" width="260" height="150" alt="" title="" >
         <p class="production-process__comments">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
         <a class="button button-order__process" href="#">СДЕЛАТЬ ЗАКАЗ</a>
       </section>
     </main>
     <footer class="page-footer">
+      <a class="page-footer__logo-footer" href="index.html">
+        <img  src="img/logo-footer.svg" width="102" height="34" alt="" title="" >
+      </a>
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">

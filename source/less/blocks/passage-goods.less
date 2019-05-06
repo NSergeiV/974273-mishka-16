@@ -9,7 +9,8 @@
 
 .passage-goods__link {
   color: #ffffff;
-  display: block;
+  display: flex;
+  justify-content: space-between;
   position: relative;
   box-sizing: border-box;
   width: 320px;
@@ -58,4 +59,27 @@
   font-weight: bold;
   vertical-align: middle;
   width: 105px;
+}
+
+@media (min-width: 768px) {
+  .passage-goods {
+    width: 100%;
+    display: flex;
+    margin-top: 380px;
+  }
+
+  .passage-goods__link {
+    width: 100%;
+  }
+
+  .passage-goods__interior-item,
+  .passage-goods__childrens-toy {
+    height: 107px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .passage-goods {
+    margin-bottom: 70px;
+  }
 }
