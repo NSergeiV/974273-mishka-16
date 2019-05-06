@@ -5,6 +5,13 @@
   margin: 0 auto;
   padding: 0 30px;
   background-color: #f1f1f1;
+  border: 1px solid;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.page-footer__logo-footer {
+  display: none;
 }
 
 .page-footer__social {
@@ -43,4 +50,23 @@
 
 .academy-logo path {
   fill: #63d1bb;
+}
+
+@media (min-width: 768px) {
+  .page-footer {
+    width: 768px;
+    padding: 0 50px;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+  .page-footer__logo-footer {
+    display: block;
+  }
+}
+
+@media (min-width: 1150px) {
+  .page-footer {
+    width: 1150px;
+  }
 }
