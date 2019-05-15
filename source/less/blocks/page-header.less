@@ -4,7 +4,6 @@
   height: auto;
   margin: 0 auto;
   padding: 0;
-  border: 1px solid;
   box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
@@ -34,7 +33,7 @@
   .page-header {
     width: 768px;
     height: 88px;
-    padding: 0 40px;
+    padding: 0 50px;
     border-bottom: 1px solid #dfdfdf;
     flex-wrap: nowrap;
   }
@@ -46,13 +45,28 @@
 
   .page-header__logo {
     margin: auto 0;
+    width: 113px;
+    height: 46px;
+    background: url("../img/logo-tablet.svg") no-repeat center center;
+
+    &[href]:hover {
+      opacity: 0.6;
+    }
+
+    &[href]:active {
+      opacity: 0.3;
+    }
+  }
+
+  .page-header__logo img {
+    display: none;
   }
 
   .page-header__delivery {
     display: block;
     position: absolute;
-    right: 50px;
-    top: 95px;
+    right: 48px;
+    top: 90px;
     font-size: 15px;
     line-height: 24px;
   }
@@ -67,10 +81,14 @@
 
   .page-header__logo-wrapper {
     margin: 0;
-    width: 250px;
+    width: 30%;
   }
 
   .page-header__logo {
-    margin: auto;
+    display: block;
+    margin-left: 65px;
+    width: 149px;
+    height: 72px;
+    background: url("../img/logo-desktop.svg") no-repeat center center;
   }
 }
