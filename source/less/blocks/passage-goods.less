@@ -4,7 +4,8 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0 auto;
-  margin-top: 125px;
+  margin-top: 122px;
+  margin-bottom: 25px;
 }
 
 .passage-goods__link {
@@ -52,6 +53,10 @@
   background-color: #56c3b2;
 }
 
+.interior-item__border-bottom {
+  display: none;
+}
+
 .passage-goods__title {
   margin: 0;
   font-size: 19px;
@@ -65,21 +70,59 @@
   .passage-goods {
     width: 100%;
     display: flex;
-    margin-top: 380px;
+    margin-top: 375px;
+    margin-bottom: 45px;
+    position: relative;
+    height: 120px;
   }
 
   .passage-goods__link {
     width: 100%;
+    padding: 30px 36px;
+  }
+
+  .passage-goods__title {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .interior-item__border-bottom {
+    position: absolute;
+    bottom: -17px;
+    display: block;
+    margin-left: -50px;
+
+    path {
+      fill: #ffffff;
+    }
   }
 
   .passage-goods__interior-item,
   .passage-goods__childrens-toy {
-    height: 107px;
+    height: 118px;
+    box-sizing: border-box;
+    position: relative;
+  }
+
+  .passage-goods__link--top {
+    svg {
+      top: 30px;
+    }
+  }
+
+  .passage-goods__link--bottom svg {
+    top: 30px;
+    right: 33px;
   }
 }
 
 @media (min-width: 1150px) {
+  .interior-item__border-bottom {
+    width: 1150px;
+  }
+
   .passage-goods {
-    margin-bottom: 70px;
+    margin-top: 360px;
+    margin-bottom: 120px;
   }
 }
