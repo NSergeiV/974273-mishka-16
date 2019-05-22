@@ -110,7 +110,11 @@
               <td>15см</td>
             </tr>
           </table>
-          <img class="goods-week__foto" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Товар недели - Вязаные корзинки" title="Товар недели - Вязаные корзинки">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
+            <img class="goods-week__foto" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" width="260" height="315" alt="Товар недели - Вязаные корзинки" title="Товар недели - Вязаные корзинки">
+          </picture>
           <p class="goods-week__price">Цена: 990 руб.</p>
           <a class="button button-order" href="#">ЗАКАЗАТЬ</a>
         </div>
@@ -249,10 +253,12 @@
         </div>
         <a class="button button-feedback" href="#" aril-label="Кнопка обратной связи">НАПИШИТЕ НАМ</a>
         <div class="map">
-          <h2 class="visually-hidden">Карта расположения магазина.</h2>
-          <img class="map__mobile" src="img/map-mobile@1x.jpg" alt="Место расположения магазина на карте" title="Место расположения магазина на карте">
-          <img class="map__tablet" src="img/map-tablet@1x.jpg" alt="Место расположения магазина на карте" title="Место расположения магазина на карте">
-          <img class="map__desktop" src="img/map-desktop@1x.jpg" alt="Место расположения магазина на карте" title="Место расположения магазина на карте">
+          <picture>
+            <h2 class="visually-hidden">Карта расположения магазина.</h2>
+            <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
+            <img class="map__mobile" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="Место расположения магазина на карте" title="Место расположения магазина на карте">
+          </picture>
         </div>
       </section>
     </main>
