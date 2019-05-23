@@ -25,7 +25,11 @@
   top: -50px;
   right: 50px;
   border: none;
+  padding: 0;
   background-color: #ffffff;
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
 
   &::before {
     content: "";
@@ -34,7 +38,7 @@
     top: 0;
     left: 0;
     width: 21px;
-    height: 20px;
+    height: 21px;
     cursor: pointer;
     background: url("../img/icon-menu-close.svg") no-repeat center center;
   }
@@ -45,15 +49,19 @@
     position: absolute;
     top: -50px;
     right: 50px;
+    width: 21px;
+    height: 20px;
+    padding: 0;
     border: none;
     background-color: #ffffff;
+    cursor: pointer;
 
     &::before {
       content: "";
       display: block;
       position: absolute;
       top: 0;
-      left: 10px;
+      left: 0;
       width: 20px;
       height: 15px;
       cursor: pointer;
