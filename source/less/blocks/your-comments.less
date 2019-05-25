@@ -28,17 +28,27 @@
 .your-comments__paginator {
   height: 50px;
   width: 100%;
+  padding: 0;
   border-bottom: 1px solid #ececec;
   border-top: 1px solid #ececec;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   margin-bottom: 35px;
+}
+
+.your-comments__paginator-left,
+.your-comments__paginator-right {
+  display: flex;
+  padding: 0;
+  margin: auto;
 
   button {
     border: none;
     background: transparent;
     cursor: pointer;
+    display: flex;
+    padding: 0;
 
     &:hover polygon {
       fill: rgba(0, 0, 0, 0.6);
@@ -47,6 +57,10 @@
     &:active polygon {
       fill: rgba(0, 0, 0, 0.3);
     }
+  }
+
+  svg {
+    margin: 0;
   }
 }
 

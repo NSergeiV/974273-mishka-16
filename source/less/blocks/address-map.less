@@ -42,6 +42,14 @@
 }
 
 .mail-info__info {
+  &:hover {
+    color: #46c1ae;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   &::after {
     content: "";
     display: block;
@@ -70,6 +78,15 @@
 .map__desktop,
 .map__tablet {
   display: none;
+}
+
+.map {
+  width: 322px;
+  height: 457px;
+
+  iframe {
+    border: none;
+  }
 }
 
 @media (min-width: 768px) {
@@ -136,6 +153,8 @@
 
   .map {
     margin-bottom: 54px;
+    width: 768px;
+    margin-left: -50px;
   }
 }
 
@@ -188,5 +207,6 @@
 
   .map {
     margin-left: -60px;
+    width: 525px;
   }
 }

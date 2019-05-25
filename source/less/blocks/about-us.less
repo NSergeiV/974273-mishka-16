@@ -48,6 +48,12 @@
   }
 }
 
+.about-us__item-title {
+  &:hover {
+    color: #46c1ae;
+  }
+}
+
 .about-us__svg-wrapper {
   width: 55px;
   height: auto;
@@ -61,9 +67,11 @@
 
 @media (min-width: 768px) {
   .about-us {
+    display: block;
     width: 100%;
     padding: 0;
     margin-bottom: 80px;
+    box-sizing: border-box;
   }
 
   .about-us__title {
@@ -82,11 +90,12 @@
   }
 
   .about-us__item {
-    width: 100%;
+    width: 299px;
     font-size: 20px;
     line-height: 22px;
     font-weight: bold;
     margin-bottom: 63px;
+    padding: 0;
   }
 }
 

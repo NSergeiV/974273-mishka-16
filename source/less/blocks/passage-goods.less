@@ -11,28 +11,101 @@
 .passage-goods__link {
   color: #ffffff;
   display: flex;
-  justify-content: space-between;
   position: relative;
   box-sizing: border-box;
   width: 320px;
   height: 100%;
-  padding: 26px 30px;
+
+  &:hover {
+    padding-bottom: 36px;
+    padding-top: 21px;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  svg:active {
+    opacity: 0.3;
+  }
 }
 
 .passage-goods__link path {
   fill: rgba(20, 144, 128, 0.5);
 }
 
-.passage-goods__link--top svg {
-  position: absolute;
-  top: 20px;
-  right: 36px;
+.passage-goods__link--top {
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 11%;
+    width: 41px;
+    height: 63px;
+    background-image: url("../img/icon-interior.svg");
+  }
+
+  &::after {
+    content: "Предметы  интерьера";
+    display: block;
+    position: absolute;
+    top: 26px;
+    left: 10%;
+    margin: 0;
+    font-size: 19px;
+    line-height: 24px;
+    font-weight: bold;
+    vertical-align: middle;
+    width: 105px;
+  }
+
+  &:hover::before {
+    top: 15px;
+  }
+
+  &:hover::after {
+    top: 21px;
+  }
 }
 
-.passage-goods__link--bottom svg {
-  position: absolute;
-  top: 20px;
-  right: 27px;
+.passage-goods__link--bottom {
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 8%;
+    width: 60px;
+    height: 60px;
+    background-image: url("../img/icon-toy.svg");
+  }
+
+  &::after {
+    content: "Детские  игрушки";
+    display: block;
+    position: absolute;
+    top: 26px;
+    left: 10%;
+    margin: 0;
+    font-size: 19px;
+    line-height: 24px;
+    font-weight: bold;
+    vertical-align: middle;
+    width: 105px;
+  }
+
+  &:hover::before {
+    top: 15px;
+  }
+
+  &:hover::after {
+    top: 21px;
+  }
 }
 
 .passage-goods__interior-item {
@@ -42,6 +115,14 @@
   padding: 0;
   text-align: left;
   background-color: #63d1bb;
+
+  &:hover {
+    height: 108px;
+
+    svg {
+      top: 15px;
+    }
+  }
 }
 
 .passage-goods__childrens-toy {
@@ -51,6 +132,14 @@
   padding: 0;
   text-align: left;
   background-color: #56c3b2;
+
+  &:hover {
+    height: 108px;
+
+    svg {
+      top: 15px;
+    }
+  }
 }
 
 .interior-item__border-bottom {
@@ -64,6 +153,10 @@
   font-weight: bold;
   vertical-align: middle;
   width: 105px;
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: 768px) {
@@ -90,7 +183,7 @@
     position: absolute;
     bottom: -17px;
     display: block;
-    margin-left: -50px;
+    left: -50px;
 
     path {
       fill: #ffffff;
@@ -102,6 +195,10 @@
     height: 118px;
     box-sizing: border-box;
     position: relative;
+
+    &:hover {
+      height: 123px;
+    }
   }
 
   .passage-goods__link--top {

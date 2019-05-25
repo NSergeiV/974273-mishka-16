@@ -1,4 +1,5 @@
 .order-form {
+  display: block;
   width: 320px;
   height: auto;
   margin: 0 auto;
@@ -23,6 +24,7 @@
   font-weight: bold;
   line-height: 30px;
   margin: auto;
+  height: 30px;
 }
 
 @media (min-width: 768px) {
@@ -47,11 +49,18 @@
       display: block;
       position: absolute;
       bottom: -6px;
+      left: 0;
 
       path {
         fill: #ffffff;
       }
     }
+  }
+
+  .order-form__title {
+    font-size: 53px;
+    line-height: 50px;
+    height: 50px;
   }
 }
 
@@ -69,5 +78,6 @@
     line-height: 57px;
     margin: auto;
     margin-top: 93px;
+    height: 57px;
   }
 }
