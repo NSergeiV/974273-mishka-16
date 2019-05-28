@@ -2,7 +2,7 @@
   width: 320px;
   height: auto;
   margin: 0 auto;
-  margin-bottom: 30px;
+  margin-bottom: 35px;
   padding: 0 30px;
   box-sizing: border-box;
   text-align: left;
@@ -29,18 +29,20 @@
   height: 50px;
   width: 100%;
   padding: 0;
-  border-bottom: 1px solid #ececec;
-  border-top: 1px solid #ececec;
+  border: 1px solid #ececec;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 35px;
+  margin-bottom: 39px;
+  box-sizing: border-box;
 }
 
 .your-comments__paginator-left,
 .your-comments__paginator-right {
   display: flex;
   padding: 0;
+  width: 100%;
+  height: 100%;
   margin: auto;
 
   button {
@@ -49,6 +51,7 @@
     cursor: pointer;
     display: flex;
     padding: 0;
+    margin: auto;
 
     &:hover polygon {
       fill: rgba(0, 0, 0, 0.6);
@@ -64,12 +67,16 @@
   }
 }
 
+.your-comments__paginator-left {
+  border-right: 1px solid #ececec;
+}
+
 .your-comments__name {
   font-size: 17px;
   font-weight: bold;
   line-height: 30px;
   margin: 0;
-  margin-top: 28px;
+  margin-top: 22px;
   display: block;
 }
 
@@ -87,7 +94,7 @@
   font-weight: bold;
   line-height: 20px;
   display: block;
-  height: 53px;
+  height: 52px;
   width: 100%;
   text-align: center;
   padding: 15px 0;
@@ -102,7 +109,7 @@
     margin-left: -7.5%;
     margin-bottom: 65px;
     padding: 0 50px;
-    padding-bottom: 38px;
+    padding-bottom: 45px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -126,7 +133,7 @@
 
   .button-comments {
     position: absolute;
-    top: 81px;
+    top: 80px;
     right: 50px;
     width: 175px;
     height: 52px;
@@ -135,6 +142,7 @@
 
   .comments-one {
     font-size: 17px;
+    margin-top: -7px;
   }
 
   .your-comments__wrapper-bottom {
