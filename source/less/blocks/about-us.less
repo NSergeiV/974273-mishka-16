@@ -34,6 +34,11 @@
   box-sizing: border-box;
 }
 
+.about-us__list ul {
+  text-decoration: none;
+  padding: 0;
+}
+
 .about-us__item {
   display: flex;
   padding: 0;
@@ -45,6 +50,12 @@
 
   &:last-child {
     margin-bottom: 0;
+  }
+}
+
+.about-us__item-title {
+  &:hover {
+    color: #46c1ae;
   }
 }
 
@@ -61,32 +72,40 @@
 
 @media (min-width: 768px) {
   .about-us {
+    display: block;
     width: 100%;
     padding: 0;
-    margin-bottom: 80px;
+    margin-bottom: 83px;
+    box-sizing: border-box;
   }
 
   .about-us__title {
     font-size: 43px;
     line-height: 50px;
     margin-bottom: 51px;
-    margin-left: 0;
+    margin-left: -4px;
   }
 
   .about-us__list {
     width: 100%;
     display: flex;
+    justify-content: flex-start;
     flex-direction: row;
     flex-wrap: nowrap;
     height: auto;
+
+    & > li:first-child {
+      margin-right: 34px;
+    }
   }
 
   .about-us__item {
-    width: 100%;
+    width: 299px;
     font-size: 20px;
     line-height: 22px;
     font-weight: bold;
     margin-bottom: 63px;
+    padding: 0;
   }
 }
 

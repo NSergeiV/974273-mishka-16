@@ -1,26 +1,12 @@
 .production-process {
   width: 260px;
-  height: 501px;
+  height: auto;
   box-sizing: border-box;
   padding: 0 30px;
   margin: 0 auto;
   margin-bottom: 60px;
   border: 1px solid #ececec;
   border-bottom: 1px solid #ececec;
-
-  img {
-    margin-bottom: 25px;
-  }
-}
-
-.video-mobile {
-  display: block;
-  margin-left: -30px;
-}
-
-.video-tablet,
-.video-desktop {
-  display: none;
 }
 
 .production-process__title {
@@ -37,7 +23,7 @@
     display: block;
     position: absolute;
     top: 10px;
-    left: 5px;
+    left: 3px;
     width: 32px;
     height: 22px;
     background: url("../img/icon-video.svg") no-repeat center center;
@@ -47,7 +33,7 @@
 .production-process__comments {
   font-size: 13px;
   line-height: 24px;
-  padding-left: 5px;
+  padding-left: 4px;
   padding-right: 5px;
 }
 
@@ -56,13 +42,53 @@
   font-weight: bold;
   line-height: 16px;
   text-align: center;
-  margin: 27px auto;
-  padding: 16px;
+  margin: 25px auto;
+  margin-bottom: 32px;
+  padding: 16px 0;
   display: block;
   box-sizing: border-box;
   width: 190px;
   height: 52px;
   border-width: 2px;
+}
+
+.production-process__img-wrapper {
+  display: flex;
+  position: relative;
+  margin-bottom: 27px;
+  margin-left: -30px;
+  width: 260px;
+  height: 150px;
+  box-sizing: border-box;
+  background-image: url("../img/video-mobile@1x.jpg");
+  background-size: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("../img/video-mobile@2x.jpg");
+    background-size: 260px 150px;
+  }
+
+  .production-process__icon-play {
+    width: 102px;
+    height: 78px;
+    margin: auto;
+    background: url("../img/icon-play.svg") no-repeat center center;
+    cursor: pointer;
+    border: none;
+
+    &:hover {
+      width: 123px;
+      height: 95px;
+      background-size: 100%;
+    }
+
+    &:active {
+      width: 82px;
+      height: 63px;
+    }
+  }
 }
 
 @media (min-width: 768px) {
@@ -74,26 +100,26 @@
     margin-bottom: 65px;
   }
 
-  .video-tablet {
-    display: block;
-    margin-left: -30px;
-  }
-
-  .video-mobile,
-  .video-desktop {
-    display: none;
-  }
-
-  .production-process img {
-    width: auto;
-    height: auto;
+  .production-process__img-wrapper {
+    width: 668px;
+    height: 455px;
     order: -1;
+    margin-right: -30px;
+    background-image: url("../img/video-tablet@1x.jpg");
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/video-tablet@2x.jpg");
+      background-size: 668px 455px;
+    }
   }
 
   .production-process__title {
     padding-left: 75px;
     font-size: 20px;
-    margin-top: 13px;
+    margin-top: 10px;
     margin-bottom: 15px;
 
     &::before {
@@ -107,12 +133,16 @@
     line-height: 30px;
     padding: 0;
     padding-left: 10px;
-    margin-bottom: 8px;
+    padding-right: 5px;
+    margin-bottom: 10px;
+    margin-top: 17px;
   }
 
   .button-order__process {
-    width: 97%;
-    margin-bottom: 45px;
+    width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 44px;
   }
 }
 
@@ -121,42 +151,47 @@
     flex-direction: column;
     height: 455px;
     margin-bottom: 103px;
+    padding-right: 0;
   }
 
   .button-order__process {
     width: 230px;
-    margin-left: 55px;
+    margin-left: 50px;
     margin-top: 35px;
+    margin-right: 0;
   }
 
   .production-process__comments {
-    width: 230px;
-    margin-left: 40px;
+    width: 225px;
+    margin-left: 39px;
+    margin-bottom: 12px;
+    padding-right: 0;
   }
 
-  .video-desktop {
-    display: block;
-    margin-left: -30px;
-  }
+  .production-process__img-wrapper {
+    width: 682px;
+    height: 456px;
+    margin-bottom: 0;
+    background-image: url("../img/video-desktop@1x.jpg");
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
 
-  .video-mobile,
-  .video-tablet {
-    display: none;
-  }
-
-  .production-process img {
-    width: 683px;
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/video-desktop@2x.jpg");
+      background-size: 682px 456px;
+    }
   }
 
   .production-process__title {
-    margin-top: 95px;
-    margin-left: 52px;
+    margin-top: 92px;
+    margin-left: 50px;
     padding-left: 0;
     width: 200px;
 
     &::before {
-      left: 0;
-      top: -50px;
+      left: 2px;
+      top: -49px;
     }
   }
 }

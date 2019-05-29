@@ -2,7 +2,7 @@
   width: 320px;
   height: auto;
   margin: 0 auto;
-  margin-top: 28px;
+  margin-top: 23px;
   padding: 0;
   box-sizing: border-box;
   display: flex;
@@ -15,7 +15,7 @@
   line-height: 30px;
   margin: 0;
   margin-left: 30px;
-  margin-bottom: 28px;
+  margin-bottom: 26px;
 }
 
 .contacts {
@@ -24,7 +24,8 @@
   width: 60px;
   height: auto;
   margin: 0 auto;
-  margin-bottom: 40px;
+  margin-bottom: 37px;
+  box-sizing: border-box;
 }
 
 .contacts__wrapper {
@@ -42,9 +43,21 @@
 }
 
 .mail-info__info {
+  position: relative;
+
+  &:hover {
+    color: #46c1ae;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   &::after {
     content: "";
     display: block;
+    position: absolute;
+    top: 28px;
     width: 100%;
     height: 1px;
     border-bottom: 1px solid #62d1ba;
@@ -62,7 +75,9 @@
   line-height: 20px;
   color: #444444;
   padding: 15px 0;
-  margin: 31px auto;
+  margin: auto;
+  margin-top: 38px;
+  margin-bottom: 31px;
   order: 1;
   border: 2px solid;
 }
@@ -70,6 +85,15 @@
 .map__desktop,
 .map__tablet {
   display: none;
+}
+
+.map {
+  width: 322px;
+  height: 457px;
+
+  iframe {
+    border: none;
+  }
 }
 
 @media (min-width: 768px) {
@@ -122,14 +146,9 @@
     min-width: 75px;
   }
 
-  .map__tablet {
-    display: block;
+  .map__mobile {
     margin-bottom: 0;
     margin-left: -50px;
-  }
-
-  .map__mobile {
-    display: none;
   }
 
   .button-feedback {
@@ -141,6 +160,12 @@
 
   .map {
     margin-bottom: 54px;
+    width: 768px;
+    margin-left: -50px;
+
+    iframe {
+      width: 100%;
+    }
   }
 }
 
@@ -191,16 +216,8 @@
     font-size: 17px;
   }
 
-  .map__mobile,
-  .map__tablet {
-    display: none;
-  }
-
   .map {
     margin-left: -60px;
-  }
-
-  .map__desktop {
-    display: block;
+    width: 525px;
   }
 }
