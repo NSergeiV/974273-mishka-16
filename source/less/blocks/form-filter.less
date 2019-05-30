@@ -474,7 +474,6 @@
 
   .block-form__phone {
     margin-top: 48px;
-    margin-left: 42px;
     padding-left: 18px;
     background-position: 450px 50%;
 
@@ -483,9 +482,15 @@
     }
   }
 
+  .block-form__phone-wraper,
+  .block-form__email-wrapper,
+  .block-form__wishes-wrapper {
+    flex-wrap: wrap;
+    width: 500px;
+  }
+
   .block-form__email {
     margin-top: 10px;
-    margin-left: 42px;
     padding-left: 18px;
     padding-top: 2px;
     background-position: 450px 63%;
@@ -496,7 +501,6 @@
   }
 
   .block-form__wishes {
-    margin-left: 44px;
     padding: 14px;
 
     &::placeholder {

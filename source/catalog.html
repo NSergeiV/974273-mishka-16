@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Мишка</title>
+    <link rel="preload" href="fonts/opensans.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font" type="font/woff2" crossorigin>
     <link href="css/style.min.css" rel="stylesheet">
     <script src="js/picturefill.min.js" async></script>
   </head>
@@ -228,21 +230,6 @@
         <button class="modal__button button" type="submit">Добавить</button>
       </form>
     </section>
-    <script>
-    var navMain = document.querySelector('.main-nav');
-    var navToggle = document.querySelector('.main-nav__toggle');
-
-    navMain.classList.remove('main-nav--nojs');
-
-    navToggle.addEventListener('click', function() {
-      if (navMain.classList.contains('main-nav--close')) {
-        navMain.classList.remove('main-nav--close');
-        navMain.classList.add('main-nav--opened');
-      } else {
-        navMain.classList.add('main-nav--close');
-        navMain.classList.remove('main-nav--opened');
-      }
-    });
-    </script>
+    <script src="js/script.js" async></script>
   </body>
 </html>
