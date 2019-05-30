@@ -1,14 +1,13 @@
 .page-main {
+  position: relative;
   display: block;
-  width: 320px;
   height: auto;
-  margin: 0 auto;
-  padding: 0;
-  box-sizing: border-box;
+  width: 100%;
   border-top: 1px solid #ececec;
-  background-image: url("../img/hero-mobile1x.jpg");
+  background-image: url("../img/hero-mobile1x.jpg"), linear-gradient(180deg, #f9f9f9, #f9f9f9);
   background-repeat: no-repeat;
   background-position: center -20px;
+  background-size: auto, 100% 374px;
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     background-image: url("../img/hero-mobile@2x.jpg");
@@ -16,31 +15,58 @@
   }
 }
 
+.interior-item__border-bottom {
+  display: none;
+}
+
+.page-main__inner-wrapper {
+  display: block;
+  width: 320px;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  background: transparent;
+}
+
 .page-main__title {
   font-size: 27px;
   line-height: 30px;
   font-weight: bold;
-
   margin: 0 auto;
   margin-top: 68px;
   padding: 0;
-
   width: 260px;
-
   text-align: center;
 }
 
 @media (min-width: 768px) {
   .page-main {
-    width: 768px;
     background-image: url("../img/hero-tablet@1x.jpg");
     background-position: center 0;
-    padding: 0 50px;
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       background-image: url("../img/hero-tablet@2x.jpg");
-      background-size: 1150px auto;
+      background-size: auto;
     }
+  }
+
+  .interior-item__border-bottom {
+    position: absolute;
+    z-index: 55;
+    top: 720px;
+    bottom: -17px;
+    display: block;
+    width: 100%;
+
+    path {
+      fill: #ffffff;
+    }
+  }
+
+  .page-main__inner-wrapper {
+    width: 768px;
+    padding: 0 50px;
   }
 
   .page-main__title {
@@ -53,13 +79,21 @@
 
 @media (min-width: 1150px) {
   .page-main {
-    width: 1150px;
-    background-image: url("../img/hero-desktop@1x.jpg");
+    background-image: url("../img/hero-desktop@1x.jpg"), linear-gradient(180deg, #f9f9f9, #f9f9f9);
+    background-size: auto, 100% 746px;
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       background-image: url("../img/hero-desktop@2x.jpg");
-      background-size: 1150px auto;
+      background-size: 746px auto;
     }
+
+    .interior-item__border-bottom {
+      width: 100%;
+    }
+  }
+
+  .page-main__inner-wrapper {
+    width: 1150px;
   }
 
   .page-main__title {

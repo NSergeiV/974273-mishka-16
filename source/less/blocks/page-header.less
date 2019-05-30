@@ -1,4 +1,10 @@
 .page-header {
+  height: auto;
+  width: 100%;
+  border-bottom: 1px solid #ececec;
+}
+
+.page-header__inner-wrapper {
   position: relative;
   width: 320px;
   height: auto;
@@ -13,7 +19,6 @@
   display: flex;
   width: 320px;
   height: 79px;
-  border-bottom: 1px solid #ececec;
 }
 
 .page-header__logo {
@@ -32,10 +37,13 @@
 
 @media (min-width: 768px) {
   .page-header {
+    border-bottom: 1px solid #dfdfdf;
+  }
+
+  .page-header__inner-wrapper {
     width: 768px;
     height: 88px;
     padding: 0 50px;
-    border-bottom: 1px solid #dfdfdf;
     flex-wrap: nowrap;
   }
 
@@ -75,7 +83,7 @@
 }
 
 @media (min-width: 1150px) {
-  .page-header {
+  .page-header__inner-wrapper {
     width: 1150px;
     display: flex;
     justify-content: flex-end;
