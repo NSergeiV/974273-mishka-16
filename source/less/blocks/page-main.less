@@ -49,9 +49,22 @@
       background-image: url("../img/hero-tablet@2x.jpg");
       background-size: auto;
     }
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 726px;
+      left: 0;
+      height: 24px;
+      width: 100%;
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-repeat: repeat-x;
+      z-index: 100;
+    }
   }
 
-  .interior-item__border-bottom {
+  /*.interior-item__border-bottom {
     position: absolute;
     z-index: 55;
     top: 720px;
@@ -62,7 +75,7 @@
     path {
       fill: #ffffff;
     }
-  }
+  }*/
 
   .page-main__inner-wrapper {
     width: 768px;
